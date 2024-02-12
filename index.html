@@ -123,10 +123,10 @@
     background-color: #70259b;
   }
   .two-col{
-    /* border:2px solid coral; */
-    margin:10px 0 20px ;
+    border:2px solid coral;
+    margin:10px 0 10px ;
     float:left;
-    width:42%;
+    width:43%;
     padding:2% 3%;
   }
   .two-col h5{
@@ -154,8 +154,8 @@
   .social{
     background-color: #430964;
     color:#fff;
-    padding: 5% ;
-    margin: 12px 0 26px ;
+    padding: 5%  ;
+    margin: 10px 0 26px ;
   }
   ul{
     float:right;
@@ -170,17 +170,19 @@
   
   }
   .social-icons img {
-    max-width: 30px;
+    max-width: 28px;
     padding: 5px 10px 0; 
   }
   .social h3 {
+    text-align: left;
     font-size: 30px;
     font-weight:600 bolder;
     line-height: 40px;
-    margin:20px 0 12px
+    margin:10px 0 12px
   
   }
   .social p{
+    text-align: left;
     letter-spacing: 1px;
     font-size: 18px;
     line-height: 34px;
@@ -205,11 +207,9 @@
     
   }
   @media only screen and  (max-width:495px ) {
-    
-  
+
       body {
-        padding: 1%;
-      
+        padding: 1%;  
       }
 
     .col-2 {
@@ -225,12 +225,14 @@
       margin: 0 10px ;
       min-width: 300px;
     min-height:120px;
-    margin-top:70%; 
+    margin-top:70px; 
+      }
 
-
+      .grey-col h5 , h6{
+        font-size: 18px;
       }
       .two-col {
-        padding-top: 10%;
+        padding-top: 20px;
         margin : 5px 0 10px;
       }
     .social-icons img {
@@ -242,16 +244,35 @@
   @media only screen and  (max-width:390px ) {
     body {
         padding: 1%;
-      
+        width: 380px;
       }
-    .grey-col {
-      /* margin: 0 10px ; */
-      min-width: 250px;
-    min-height:250px;
-    margin-top:80%; 
+      .top-section{
+      width:250px;
     }
-    .grey-col h5 h6{
-      font-size:16px;
+    .grey-col {
+      position:absolute;
+      /* margin: 0 10px ; */
+      min-width: 200px;
+    min-height:200px;
+    margin-bottom:60px; 
+    }
+    .grey-col h5, h6{
+      font-size:12px;
+    }
+    
+    .line{
+      position: relative;
+      top:0;
+      bottom: 90%;
+    }
+    .two-col{
+      /* margin-top: 50px; */
+      position: relative;
+      top: 10%;
+      bottom: 100%;
+    }
+    .two-col img{
+      margin-top: -25px;
     }
     .social{
      margin-top: 30%;
@@ -268,6 +289,38 @@
       padding: 2px 4px ; 
     }
   }
+  /* @media only screen and  (max-width:354px ) {
+    body{
+      padding:1%;
+      width: 250px;
+    }
+    .top-section{
+      width:250px;
+    }
+       .grey-col{
+      max-width: 250px;
+     min-height:150px;
+     padding-top:-80px;
+
+       }
+       .grey-col h5, h6{
+      font-size:12px;
+    }
+    .two-col{
+      margin-bottom : -100px ;
+    }
+    .social{
+      max-width:120px;
+    }
+    .social h3 {
+      font-size:16px;
+      margin-bottom: -40px;
+      padding-bottom: 20px;
+    }
+    .social p {
+      margin-top: -25px;
+    }
+  } */
 
 
  </style>
@@ -356,7 +409,7 @@
       <div class="download-sec">
          <h5>Download the Brand app from your app store today</h5>
          <div class="d-images">
-          <a href="https://imgbb.com/"><img src="https://i.ibb.co/LkF4fQg/app-dev-icon.png" alt="app-dev-icon" border="0"></a><a href="https://imgbb.com/"><img src="https://i.ibb.co/J3S9Ypd/app-store-btn.png" alt="app-store-btn" border="0"></a>
+          <a href="https://imgbb.com/"><img src="https://i.ibb.co/J3S9Ypd/app-store-btn.png" alt="app-store-btn" border="0"></a>
           <a href="https://imgbb.com/"><img src="https://i.ibb.co/gZTTsJd/google-play-btn.png" alt="google-play-btn" border="0"></a>
       </div>
 
@@ -369,7 +422,7 @@
            <li><a href="https://imgbb.com/"><img src="https://i.ibb.co/4fvdCBK/twitter-icon-2x.png" alt="twitter-icon-2x" border="0"></a></li>
          </ul>
          <h3 >Have a project in mind? <br>
-        Let's make it happen</h3>
+              Let's make it happen</h3>
 
         <p>22 Street Name, Suburb, 8000,  <br>
             Cape Town, South Africa <br>
