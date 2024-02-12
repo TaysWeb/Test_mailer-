@@ -1,0 +1,388 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Automatic dark mode  -->
+  <meta name="color-scheme" content="light dark">
+  <meta name="supported-color-schemes" content="light dark">
+
+  <title>Mailer Test </title>
+ <style type="text/css">
+  /* font  */
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;700&display=swap');
+
+  
+  :root {
+    color-scheme: light dark;
+  }
+  *{
+    margin:0;
+    padding:0;
+    border:0;
+  }
+  body {  
+    font-family: 'Inter', sans-serif;
+    max-width: 700px;
+    margin: 0 auto ;
+    padding:2%;
+    
+  }
+  a{
+    padding: 0;
+    text-decoration: none !important;
+    color:#fff;
+  }
+  li{
+    list-style: none;
+  }
+  img {
+    max-width: 100%;
+  }
+  h3{
+    padding-bottom:15px ;
+  }
+  h4{
+    line-height: 20px;
+    font-weight:350;
+  }
+  p{
+    font-size:18px;
+    font-weight: 400 bolder;
+    padding-bottom: 25px;
+  }
+  .top-section {
+    background: #000;
+    height:20px ;
+    padding:11px 40px 11px 40px;
+    gap: 1px;
+  }
+  .top-section p{
+    float: right;
+    padding:1% ;
+    color:#fff;
+    font-family: 'Inter', sans-serif;
+    font-size: 10px;
+  }
+  .hero {
+
+   padding-top: 10px;
+   height:420px;
+  }
+  .col-2 {
+    margin:3px 0 10px ;
+    float:left;
+    width:40%;
+    padding:2% 5%;
+  }
+  .col-2 h3{ 
+    margin: 5% 0;
+    font-family: 'Inter', sans-serif;
+    font-size: 48px;
+  }
+  .col-2 h4{ 
+  
+    font-family: 'Inter', sans-serif;
+   font-weight:400 bold ;
+  }
+  .button-holder{
+    Margin: 13% 0 5% 0;
+  }
+  .btn{
+    line-height: 20px;
+    background: #70259b;
+    font-size: 14px;
+    font-weight: 600;
+    color: #FFF;
+    padding: 1em 2em;
+    border-radius: 28px;
+  }
+  .grey-col{
+    background:#f5f5f5;
+    height:200px;
+    padding:2% 5%;
+  }
+  .grey-col h5 {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 18px;
+    padding-bottom: 25px;
+  }
+  .grey-col h6{
+    font-weight: bolder;
+    font-size: 14px;
+    line-height: 25px;
+  }
+  .line{
+    clear:both;
+    height:7px ;
+    /* margin: auto 10px ; */
+    width:100%;
+    background-color: #70259b;
+  }
+  .two-col{
+    /* border:2px solid coral; */
+    margin:10px 0 20px ;
+    float:left;
+    width:42%;
+    padding:2% 3%;
+  }
+  .two-col h5{
+    font-size: 22px;
+    font-weight: 500 bolder;
+    line-height: 50px;
+    padding-bottom: 10px;
+  }
+
+  .download-sec{
+    padding:20px 0 40px;
+    gap:30px;
+    text-align: center;
+    max-height:180px;
+  }
+  .download-sec h5 {
+    line-height: 28px;
+    padding-bottom: 25px;
+    font-size: 22px;
+  }
+  .download-sec img {
+    max-width: 150px ;
+    margin:10px  10px;
+  }
+  .social{
+    background-color: #430964;
+    color:#fff;
+    padding: 5% ;
+    margin: 12px 0 26px ;
+  }
+  ul{
+    float:right;
+  }
+  .social-icons {
+   margin-top: -60px;
+  }
+  .social-icons li{
+    display: inline;
+    margin:10px 0 5px;
+    justify-content: space-between;
+  
+  }
+  .social-icons img {
+    max-width: 30px;
+    padding: 5px 10px 0; 
+  }
+  .social h3 {
+    font-size: 30px;
+    font-weight:600 bolder;
+    line-height: 40px;
+    margin:20px 0 12px
+  
+  }
+  .social p{
+    letter-spacing: 1px;
+    font-size: 18px;
+    line-height: 34px;
+    font-weight: 200 light;
+  }
+  @media only screen and  (max-width:600px ) {
+   
+      body {
+        padding: 1%;
+      }
+      
+      .col-2 {
+        max-width: 96%;
+        margin:10px 0 15px !important; 
+       padding:2% 5%;
+      }
+    .two-col {
+    min-width: 96%;
+    margin: 0 0 15px !important;
+   }
+
+    
+  }
+  @media only screen and  (max-width:495px ) {
+    
+  
+      body {
+        padding: 1%;
+      
+      }
+
+    .col-2 {
+        min-width: 96%;
+        margin:8px 0 10px !important; 
+       padding:2% 5%;
+      }
+      .col-2 h3 {
+        margin: 5% 0;
+       font-size: 30px; 
+      }
+      .grey-col{
+      margin: 0 10px ;
+      min-width: 300px;
+    min-height:120px;
+    margin-top:70%; 
+
+
+      }
+      .two-col {
+        padding-top: 10%;
+        margin : 5px 0 10px;
+      }
+    .social-icons img {
+      max-width: 20px;
+    }
+  
+  }
+
+  @media only screen and  (max-width:390px ) {
+    body {
+        padding: 1%;
+      
+      }
+    .grey-col {
+      /* margin: 0 10px ; */
+      min-width: 250px;
+    min-height:250px;
+    margin-top:80%; 
+    }
+    .grey-col h5 h6{
+      font-size:16px;
+    }
+    .social{
+     margin-top: 30%;
+    }
+    .social p {
+      font-size: 10px;
+    }
+    .social-icons{
+      display: block;
+      flex-wrap: wrap;
+    }
+    .social-icons img {
+      max-width:12px;
+      padding: 2px 4px ; 
+    }
+  }
+
+
+ </style>
+</head>
+
+<body>
+        <!-- Start of wrapper -->
+    <div class="email-wrapper">
+      <div class="top-section">
+        <p>Unsubscribe</p>
+      </div>
+
+      <div class="hero" >
+        <div class="col-2" >
+            <img src="./assets/logo.png" alt="logo.png" >
+            <h3 >Live with Confidence</h3>
+            <h4>José Mourinho brings confidence <br>
+            to pan-African Sanlam campaign.</h4>
+            <div class="button-holder">
+                <a href="#" class="btn" target="_blank">View project</a>
+            </div>
+        </div>
+        <div class="col-2">
+            <img src="./assets/jose-mourinho.jpg" alt="jose-mourinho.png" >
+        </div>
+      </div>
+
+      <div class="grey-col">
+        <h5>Hi {first name}</h5>
+        <p>We offer a complete range of bespoke design and development services <br>
+            to help you turn your ideas into digital masterpieces 
+        </p>
+        <h6>You've got this!</h6>
+        <p style="font-size: 14px;">The Brand Team</p>  
+      </div>
+
+      <div class="line"></div>
+
+      <div class="two-col">
+        <img src="./assets/web-dev-icon.png" alt="web-dev-icon">
+        <h5>Web Development</h5>
+        <p>We use cutting-edge web
+          development technologies to help
+          our clients fulfill their business
+          goals through functional, reliable
+          solutions.
+        </p>
+      </div>
+
+      
+      <div class="two-col">
+        <img src="./assets/ux-icon.png" alt="ux-icon">
+        <h5>User Experience</h5>
+        <p>Our complete web design services
+            will bring your ideas to life and
+            provide you with a sleek, highperforming product that elevates
+            your business
+        </p>
+      </div>
+
+      
+      <div class="two-col">
+        <img src="./assets/app-dev-icon.png" alt="app-dev-icon">
+        <h5>Mobile App Development</h5>
+        <p>Our extensive mobile development
+            experience allows us to create
+            custom native and cross-platform
+            iOS and Android mobile solutions
+            for our clients.
+        </p>
+      </div>
+
+      
+      <div class="two-col">
+        <img src="./assets/icon.png" alt="blockchain.png">
+        <h5>Web Development</h5>
+        <p>We conduct market research to
+            determine the optimal blockchain based solutions to help you grow
+            your company and achieve your
+            business goals. 
+        </p>
+      </div>
+
+    <div class="line" style="height: 5px;"></div>
+
+      <div class="download-sec">
+         <h5>Download the Brand app from your app store today</h5>
+         <div class="d-images">
+         <a href="#" target="_blank"><img src="./assets/app-store-btn.png" alt="app-store.png" ></a> 
+         <a href="#" target="_blank"><img src="./assets/google-play-btn.png" alt="google-play-btn" ></a>
+         </div>
+      </div>
+
+      <div class="social">
+       <p style="font-size:22px ;font-weight: 450; letter-spacing: 1px;">Contact us</p>
+         <ul class="social-icons">
+           <li><a href="#"><img src="./assets/whatsapp-icon@2x.png" alt="whatsapp-icon"></a></li>
+           <li><a href="#"><img src="./assets/instagram-icon@2x.png" alt="instagram.png"></a></li>
+           <li><a href="#"><img src="./assets/facebook-icon@2x.png" alt="facebook-icon.png"></a></li>
+           <li><a href="#"><img src="./assets/twitter-icon@2x.png" alt="twitter-icon.png"></a></li>
+         </ul>
+         <h3 >Have a project in mind? <br>
+        Let's make it happen</h3>
+
+        <p>22 Street Name, Suburb, 8000,  <br>
+            Cape Town, South Africa <br>
+            +27 21 431 1000         <br>
+            <ins>enquire@brand.co.za</ins>
+        </p>
+
+        <p style="font-size: 12px; font-weight: 100 light;"><a href="#"><u style="font-size:12px ; font-weight: 100 light;">Terms and Conditions</u></a> apply. <a href="#"><u style="font-size:12px ; font-weight: 100 light;">Unsubscribe</u></a> here</p>
+      </div>
+
+    </div>
+
+    <!-- End of email wrapper  -->
+</body>
+</html>
