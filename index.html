@@ -88,7 +88,7 @@
    font-weight:400 bold ;
   }
   .button-holder{
-    Margin: 13% 0 5% 0;
+    Margin: 15% 0 10% 0;
   }
   .btn{
     line-height: 20px;
@@ -127,7 +127,7 @@
     margin:10px 0 10px ;
     float:left;
     width:43%;
-    padding:2% 3%;
+    padding:3% 3%;
   }
   .two-col h5{
     font-size: 22px;
@@ -154,24 +154,24 @@
   .social{
     background-color: #430964;
     color:#fff;
-    padding: 5%  ;
-    margin: 10px 0 26px ;
+    padding: 7%  ;
+    margin: 20px 0 26px ;
   }
   ul{
     float:right;
   }
   .social-icons {
-   margin-top: -60px;
+   margin-top: -65px;
   }
   .social-icons li{
     display: inline;
-    margin:10px 0 5px;
+    margin:10px 0 4px;
     justify-content: space-between;
   
   }
   .social-icons img {
-    max-width: 28px;
-    padding: 5px 10px 0; 
+    max-width: 26px;
+    padding: 3px 8px 3px; 
   }
   .social h3 {
     text-align: left;
@@ -188,12 +188,14 @@
     line-height: 34px;
     font-weight: 200 light;
   }
+
+  /* Media Queries */
+
   @media only screen and  (max-width:600px ) {
    
       body {
         padding: 1%;
       }
-      
       .col-2 {
         max-width: 96%;
         margin:10px 0 15px !important; 
@@ -202,86 +204,83 @@
     .two-col {
     min-width: 96%;
     margin: 0 0 15px !important;
-   }
-
-    
+   } 
   }
   @media only screen and  (max-width:495px ) {
 
-      body {
-        padding: 1%;  
-      }
-
-    .col-2 {
-        min-width: 96%;
+      .hero {
+        /* border: 2px solid black; */
+        display: block;
         margin:8px 0 10px !important; 
-       padding:2% 5%;
       }
       .col-2 h3 {
-        margin: 5% 0;
+        margin: 5% 0 !important;
        font-size: 30px; 
-      }
+      } 
       .grey-col{
       margin: 0 10px ;
-      min-width: 300px;
-    min-height:120px;
-    margin-top:70px; 
+      min-width: 360px;
+    margin-top:25px; 
       }
-
       .grey-col h5 , h6{
-        font-size: 18px;
+        font-size: 16px;
       }
       .two-col {
-        padding-top: 20px;
-        margin : 5px 0 10px;
+      margin:7%;
+      }
+      .social p {
+       font-size: 12px;
       }
     .social-icons img {
-      max-width: 20px;
+      max-width: 18px;
+      padding: 3px 0 3px; 
     }
   
   }
 
-  @media only screen and  (max-width:390px ) {
-    body {
-        padding: 1%;
-        width: 380px;
- 
-      }
+  @media only screen and  (max-width:389px ) {
+
       .top-section{
-      width:300px;
-    }
-    .hero{
-      border:2px solid black;
-      min-height: 700px;
-    }
+      width:400px;
+    }  
+      .hero {     
+        min-height: 600px;  
+      }
+      .col-2{
+        border:2px solid black;
+        padding:15%;
+      }
+       .col-2 h3 {   
+       font-size: 20px; 
+      } 
+    .button-holder{
+    margin: 10% 0 4% 0;
+    
+  }
+  .btn{
+    line-height: 60px;
+    margin: 5%  0 2%;
+ 
+
+  }
     .grey-col {
-      position:absolute;
-      margin: 0 10px ;
-      min-width: 200px;
-    min-height:200px;
-    margin-bottom: -80px;
-    /* padding:2em 0 3em;  */
+      min-width: 350px;
+      margin-top: 95px; 
+
+     
     }
     .grey-col h5, h6{
       font-size:12px;
     }
-    
-    .line{
-      /* position: relative;
-      top:0;
-      bottom: 90%; */
-
-      margin-bottom: -80% ;
-    }
     .two-col{
-      /* margin-top: 50px; */
-      position: relative;
-      top: -80%;
-      bottom: 50%;
-      
+      margin-top: 20px;
+      min-width:92%;
     }
     .two-col img{
       margin-top: -25px;
+    }
+    .two-col p{
+    font-size: 17px;
     }
     .social{
      margin-top: 30%;
@@ -294,20 +293,17 @@
       flex-wrap: wrap;
     }
     .social-icons img {
-      max-width:12px;
-      padding: 2px 4px ; 
-    }
+      max-width:14px;
+      padding:2px 0  3px ; 
+    } 
+   
   }
-    @media only screen and  (max-width:354px ) {
-    body{
-      padding:1%;
-      width: 250px;
-    }
+    /* @media  only screen and (max-width:280px ) {
+
     .top-section{
       width:250px;
     }
        .grey-col{
-        position: absolute;
       max-width: 250px;
      min-height:150px;
      padding-top:-80px;
@@ -317,12 +313,11 @@
       font-size:12px;
     }
     .two-col{
-      /* margin-bottom : -100px ; */
-      border: 2px solid coral;
-      position: relative;
+       margin-bottom : -100px ; 
+       border: 2px solid coral;
+   
       top:50% ;
-      bottom: 50%;
-
+      bottom: 50%; 
     }
     .social{
       max-width:120px;
@@ -335,7 +330,7 @@
     .social p {
       margin-top: -25px;
     }
-  } ss
+  }   */
 
  </style>
 </head>
