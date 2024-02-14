@@ -189,7 +189,7 @@
     font-weight: 200 light;
   }
 
-  /* Media Queries */
+  /*------------------ Media Queries  ---------------- */
 
   @media only screen and  (max-width:600px ) {
    
@@ -209,7 +209,6 @@
   @media only screen and  (max-width:495px ) {
 
       .hero {
-        /* border: 2px solid black; */
         display: block;
         margin:8px 0 10px !important; 
       }
@@ -240,97 +239,101 @@
 
   @media only screen and  (max-width:389px ) {
 
+       body{
+        max-width:400px;
+       }
       .top-section{
-      width:400px;
-    }  
-      .hero {     
-        min-height: 600px;  
-      }
+      width:380px;
+       } 
+       .top-section p{
+         padding:2% 5%;
+       } 
+     .hero{
+        min-height: 600px;
+    }
       .col-2{
-        border:2px solid black;
+    
         padding:15%;
+        min-width: 90%;
       }
        .col-2 h3 {   
-       font-size: 20px; 
+       font-size: 32px; 
       } 
     .button-holder{
-    margin: 10% 0 4% 0;
-    
+    margin: 12% 0 4% 0;  
   }
   .btn{
-    line-height: 60px;
     margin: 5%  0 2%;
- 
-
+    font-size: 16px;
   }
     .grey-col {
-      min-width: 350px;
-      margin-top: 95px; 
-
-     
+     min-width: 400px;
+      margin-top: 100%;  
     }
     .grey-col h5, h6{
       font-size:12px;
     }
+    .line{
+      min-width: 400px;
+      margin-left: 15px;
+    }
     .two-col{
-      margin-top: 20px;
-      min-width:92%;
+      padding:11%;
+      max-width: 80%;
     }
     .two-col img{
-      margin-top: -25px;
-    }
+      margin-top: -20px;
+    } 
     .two-col p{
-    font-size: 17px;
+    font-size: 18px;
     }
     .social{
-     margin-top: 30%;
+     margin-top: 12%;
+     min-width:380px;
     }
     .social p {
-      font-size: 10px;
+      font-size: 14px;
     }
-    .social-icons{
-      display: block;
-      flex-wrap: wrap;
-    }
+
     .social-icons img {
       max-width:14px;
-      padding:2px 0  3px ; 
+      padding:2px 0 10px ; 
     } 
    
   }
-    /* @media  only screen and (max-width:280px ) {
-
+    @media  only screen and (max-width:280px ) {
+     
+      body{
+      max-width: 320px;
+      }
     .top-section{
-      width:250px;
+      min-width:300px;
     }
-       .grey-col{
-      max-width: 250px;
-     min-height:150px;
-     padding-top:-80px;
-
-       }
+    .hero{
+      min-height: 500px;
+      padding: 5%;
+    }
        .grey-col h5, h6{
-      font-size:12px;
+      font-size:14px;
     }
     .two-col{
-       margin-bottom : -100px ; 
-       border: 2px solid coral;
-   
-      top:50% ;
-      bottom: 50%; 
+      padding: 20%; 
+      min-width: 97%;
+    }
+    .two-col p{
+    font-size: 20px;
+    }
+    .download-sec {
+      min-width:280px;
+      min-height: 300px;
+      margin-left: 50px;
     }
     .social{
-      max-width:120px;
+      min-width:400px;
+      margin-left:-50px;
     }
-    .social h3 {
-      font-size:16px;
-      margin-bottom: -40px;
-      padding-bottom: 20px;
-    }
-    .social p {
-      margin-top: -25px;
-    }
-  }   */
+  
+  }  
 
  </style>
 </head>
@@ -343,7 +346,7 @@
       </div>
 
       <div class="hero" >
-        <div class="col-2" >
+        <div class="col-2">
           <img src="https://i.ibb.co/89NRM9Q/logo.png" alt="logo">
             <h3 >Live with Confidence</h3>
             <h4>José Mourinho brings confidence <br>
